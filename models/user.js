@@ -27,7 +27,6 @@ class User {
   }
   discount () {
     let total = this.conditionFactor()
-    console.log(this.gender === 'female' ? (total - 12).toFixed(2) : total.toFixed(2))
     return this.gender === 'female' ? (total - 12).toFixed(2) : total.toFixed(2)
   }
 }

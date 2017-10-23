@@ -9,7 +9,6 @@ describe('models', () => {
   describe('yearsOver18()', () => {
     it('should not accept customers aged fewer than 18 years', () => {
       let user = new User('Bobby', 14, 'male', 'allergies')
-      console.log(user)
       let expected = 'Life insurance is not available for minors'
       let actual = user.yearsOver18()
       assert(expected === actual)
@@ -41,7 +40,6 @@ describe('models', () => {
       assert(expected === actual)
     })
   })
-
   describe('conditionFactor()', () => {
     it('should increase base cost by 1% for allergies', () => {
       let condition = new Condition('allergies')
@@ -65,7 +63,6 @@ describe('models', () => {
       assert(expected === actual)
     })
   })
-
   describe('discount()', () => {
     it('should subtract 12 dollars from final quote if gender is female', () => {
       let user = new User('Molly', 28, 'female', 'allergies')

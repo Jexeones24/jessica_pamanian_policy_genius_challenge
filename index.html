@@ -6,28 +6,38 @@
       <script type="javascript" src="/index.js"></script>
   </head>
   <body>
-    <div class="form-input">
+    <div class="form">
       <h1>Customer Information</h1>
-      <form action="" class="form-fields" id="form">
-        <label for="name">Name: </label>
+      <form action="" method="POST" enctype="multipart/form-data" class="userForm" id="userForm">
+        <div>
+          <label for="name">Name: </label>
           <input id="name" type="text" name="name" required></br></br>
-        <label for="age">Age: </label>
+        </div>
+        <div>
+          <label for="age">Age: </label>
           <input id="age" type="number" max="120" min="18" name="age" required></br></br>
-        <label for="gender">Gender: </label></br>
+        </div>
+        <div>
+          <label for="gender">Gender: </label></br>
           <input type="radio" name="gender" value="male" id="gender"> Male<br>
           <input type="radio" name="gender" value="female" id="gender"> Female<br> </br>
-        <label for="health-condition">Health Condition:</label>
-          <select name="health-condition" id="health-condition">
+        </div>
+        <div>
+          <label for="condition">Health Condition:</label>
+          <select name="condition" id="condition">
             <option value="allergies">Allergies</option>
             <option value="sleep apnea">Sleep Apnea</option>
             <option value="heart disease">Heart Disease</option>
           </select></br></br>
-        <button>Submit</button>
-        <input type="reset">
+        </div>
+        <div>
+          <button>Submit</button>
+          <input type="reset">
+        </div>
       </form>
     </div>
 
-    <div id="policy-price">
+    <div id="quote">
     </div>
   </body>
 </html>
