@@ -37,7 +37,7 @@ const processFields = (req, res) => {
       let condition = fields.condition
       let user = new User(name, age, gender, condition)
       let quote = user.discount()
-      console.log('quote:', '$' + quote)
+      console.log('quote:', quote)
     })
   })
 }
